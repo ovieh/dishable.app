@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom Colors */
+  --color-paper: #f5f5f0;
+  --color-newsprint: #1a1a1a;
+  --color-rust: #b7410e;
+  --color-darkgrey: #404040;
+  
+  /* Custom Font Families */
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+  --font-family-serif: 'Merriweather', serif;
+}
+
+body {
+  @apply m-0 bg-paper text-newsprint;
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
